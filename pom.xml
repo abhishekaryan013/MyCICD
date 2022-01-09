@@ -33,15 +33,16 @@
 				<configuration>
 				
 					 <cloudHubDeployment>
+					 	  <uri>https://anypoint.mulesoft.com</uri>
 					      <muleVersion>4.4.0</muleVersion>
-					      <username>Abhi_api_shek2</username>
-					      <password>Apisero@Apisero1</password>
-					      <applicationName>MyFirstdemo</applicationName>
-					      <environment>Dev</environment>
+					      <username>${PLATFORM_USERNAME}</username>
+					      <password>${PLATFORM_PASSWORD}</password>
+					      <applicationName>MyFirstdemoCloud</applicationName>
+					      <environment>Sandbox</environment>
 					      <region>us-east-2</region> 
 					      <workers>1</workers>
 					      <workerType>MICRO</workerType>
-					      <objectStoreV2>true </objectStoreV2>
+					      <objectStoreV2>true</objectStoreV2>
 					  
    					</cloudHubDeployment>
 					<sharedLibraries>
