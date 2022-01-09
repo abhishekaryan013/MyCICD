@@ -22,9 +22,9 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-clean-plugin</artifactId>
-				<version>3.0.0</version>
+				<version>3.0.0 </version>
 			</plugin>
-			<plugin>
+			<plugin>  
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
@@ -33,18 +33,17 @@
 				<configuration>
 				
 					 <cloudHubDeployment>
-					 	  <uri>https://anypoint.mulesoft.com</uri>
 					      <muleVersion>4.4.0</muleVersion>
 					      <username>${PLATFORM_USERNAME}</username>
 					      <password>${PLATFORM_PASSWORD}</password>
 					      <applicationName>MyFirstdemoCloud</applicationName>
-					      <environment>Sandbox</environment>
-					      <region>us-east-2</region> 
+					      <environment>Dev</environment>
 					      <workers>1</workers>
 					      <workerType>MICRO</workerType>
 					      <objectStoreV2>true</objectStoreV2>
+					      <region>us-east-2</region> 
 					  
-   					</cloudHubDeployment>
+   					</cloudHubDeployment> 
 					<sharedLibraries>
 						<sharedLibrary>
 							<groupId>com.mycompany</groupId>
