@@ -29,7 +29,21 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
+				
 				<configuration>
+				
+					 <cloudHubDeployment>
+					      <muleVersion>4.4.0</muleVersion>
+					      <username>Abhi_api_shek2</username>
+					      <password>Apisero@Apisero1</password>
+					      <applicationName>MyFirstdemo</applicationName>
+					      <environment>Dev</environment>
+					      <region>us-east-2</region> 
+					      <workers>1</workers>
+					      <workerType>MICRO</workerType>
+					      <objectStoreV2>true </objectStoreV2>
+					  
+   					</cloudHubDeployment>
 					<sharedLibraries>
 						<sharedLibrary>
 							<groupId>com.mycompany</groupId>
